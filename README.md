@@ -13,5 +13,5 @@ Utilisation :
 
 - Placer le script dans votre home directory (~/)
 - Editer votre fichier .zshrc qui ce trouve dans votre home directory et ajouter la ligne suivante a la fin du fichier :
-- 
+ 
         alias push="sh ~/push.sh"
