@@ -12,7 +12,7 @@
 # 2eme cas d'utilisation (si vous utiliser zsh et que vous voulez lancer le script par une commande depuis n'importe quelle dossier):
 # Placer le script dans votre home directory (~/)
 # Editer votre fichier .zshrc qui ce trouve dans votre home directory et ajouter la ligne suivante a la fin du fichier :
-# alias push="sh ~/push.sh"
+# alias push="sh ~/.push.sh"
 
 clear
 
