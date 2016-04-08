@@ -14,9 +14,9 @@
 # Editer votre fichier .zshrc qui ce trouve dans votre home directory et ajouter la ligne suivante a la fin du fichier :
 # alias push="sh ~/.push.sh"
 
-clear
 
 if [ -d "./.git" ];then
+clear
 echo "\033[32m  ____ _ _     _         _        ____            _  __     ___   ___   ___\033[0m"
 echo "\033[32m / ___(_) |_  / \  _   _| |_ ___ |  _ \ _   _ ___| |_\ \   / / | / _ \ / _ \ \033[0m"
 echo "\033[32m| |  _| | __|/ _ \| | | | __/ _ \| |_) | | | / __| '_ \ \ / /| || | | | | | |\033[0m"
