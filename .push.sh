@@ -17,11 +17,12 @@
 
 if [ -d "./.git" ];then
 clear
-echo "\033[32m  ____ _ _     _         _        ____            _  __     ___   ___  _\033[0m"
-echo "\033[32m / ___(_) |_  / \  _   _| |_ ___ |  _ \ _   _ ___| |_\ \   / / | / _ \| |\033[0m"
-echo "\033[32m| |  _| | __|/ _ \| | | | __/ _ \| |_) | | | / __| '_ \ \ / /| || | | | |\033[0m"
-echo "\033[32m| |_| | | |_| ___ \ |_| | || (_) |  __/| |_| \__ \ | | \ V / | || |_| | |\033[0m"
-echo "\033[32m \____|_|\__|_/   \_\__,_|\__\___/|_|    \__,_|___/_| |_|\_/  |_(_)___|_|\033[0m"
+echo "\033[32m  _____ _ _                 _        _____           _ __      ____   ___ ___  \033[0m"
+echo "\033[32m / ____(_) |     /\        | |      |  __ \         | |\ \    / /_ | / _ \__ \ \033[0m"
+echo "\033[32m| |  __ _| |_   /  \  _   _| |_ ___ | |__) |   _ ___| |_\ \  / / | || | | | ) | \033[0m"
+echo "\033[32m| | |_ | | __| / /\ \| | | | __/ _ \|  ___/ | | / __| '_ \ \/ /  | || | | |/ / \033[0m"
+echo "\033[32m| |__| | | |_ / ____ \ |_| | || (_) | |   | |_| \__ \ | | \  /   | || |_| / /_ \033[0m"
+echo "\033[32m \_____|_|\__/_/    \_\__,_|\__\___/|_|    \__,_|___/_| |_|\/    |_(_)___/____|\033[0m"
 
 if [ "find ./ -name .DS_Store" ];then
 	find ./ -name .DS_Store -delete
@@ -29,6 +30,10 @@ fi
 
 if [ "find ./ -name ._.DS_Store" ];then
 	find ./ -name ._.DS_Store -delete
+fi
+
+if [ "find ./ -name *.o" ];then
+	make fclean
 fi
 
 echo "\033[41mAppuyer sur Entrée pour git status...\033[0m"
@@ -59,7 +64,7 @@ clear
 echo "\033[35mgit push\033[0m"
 git push
 else
-echo "\033[31mVeuillez executer le script depuis un dossier git\033[0m"
+echo "\033[31mVeuillez executer le script depuis le repertoire ou ce trouve le dossier .git\033[0m"
 fi
 
 
