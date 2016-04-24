@@ -63,6 +63,7 @@ read a
 clear
 echo "\033[35mgit push\033[0m"
 git push
+git log
 else
 echo "\033[31mVeuillez executer le script depuis le repertoire ou ce trouve le dossier .git\033[0m"
 fi
