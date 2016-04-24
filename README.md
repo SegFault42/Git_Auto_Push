@@ -16,3 +16,10 @@ Utilisation :
  
         alias push="sh ~/.push.sh"
 - Faire un source du fichier .zshrc (source .zshrc) 
+
+Changelog 1.02:
+- Ajout de la commande git log apres le git push.
+
+Changelog 1.01:
+- Suppresion des fichiers .DS_Sore et ._.DS_Store automatiquement.
+- Make flcean si preesence d'un ou de plusieurs .o.
