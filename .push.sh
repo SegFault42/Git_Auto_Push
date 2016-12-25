@@ -32,8 +32,15 @@ if [ "find ./ -name ._.DS_Store" ];then
 	find ./ -name ._.DS_Store -delete
 fi
 
-if [ "find ./ -name *.o" ];then
-	make fclean
+if [ $# -ge 1] then;
+	for ((i = 0; i <= $1; i++))
+	do
+		find . -type d -depth $i -exec make -C {} fclean 2>/dev/null \;
+	done
+else
+	if [ "find ./ -name *.o" ];then
+		make fclean 2>/dev/null
+	fi
 fi
 
 echo "\033[41mAppuyer sur Entrée pour git status...\033[0m"
