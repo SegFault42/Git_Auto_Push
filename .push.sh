@@ -32,8 +32,8 @@ if [ "find ./ -name ._.DS_Store" ];then
 	find ./ -name ._.DS_Store -delete
 fi
 
-if [ $# -ge 1] then;
-	for ((i = 0; i <= $1; i++))
+if [ $# -ge 1 ];then
+	for ((i = 0; i <= $1; i++));
 	do
 		find . -type d -depth $i -exec make -C {} fclean 2>/dev/null \;
 	done
